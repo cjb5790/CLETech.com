@@ -28,9 +28,23 @@
 
 	{{! Ghost outputs important style and meta data with this tag }}
 	{{ghost_head}}
+	<!--<script>
+		window.onload = function () {
+			var bodyClass = document.getElementById('bodyClass').value,		
+				body = document.getElementById('body');
+				
+			body.className = '';
+				
+			if ((bodyClass.indexOf('tag-template') > -1) || bodyClass.indexOf('author-template') > -1) {
+				body.className += 'body-template';
+			} else {
+				body.className += bodyClass;
+			}
+		}
+	</script>-->
 </head>
 <input type="hidden" id="bodyClass" value="{{body_class}}" />
-<body id="body">
+<body id="body" class="{{body_class}}">
 	<div id="page" class="site">
 		{{! The tag below includes the theme header - partials/header.hbs }}
 		{{> header}}
@@ -50,17 +64,5 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="{{asset "js/plugins.js"}}"></script>
 	<script type="text/javascript" src="{{asset "js/custom.js"}}"></script>
-	<script>
-		window.onload = function () {
-			var bodyClass = document.getElementById('bodyClass').value,		
-				body = document.getElementById('body');
-				
-			if ((bodyClass.indexOf('tag-template') > -1) || bodyClass.indexOf('author-template') > -1) {
-				body.className += 'body-template';
-			} else {
-				body.className += bodyClass;
-			}
-		}
-	</script>
 </body>
 </html>

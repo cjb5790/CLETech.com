@@ -437,9 +437,10 @@ mark {
 }
 
 ins {
-	background-color: #fffac4;
+	background-color: #fff;
 	padding: 0 3px;
 	text-decoration: none;
+	text-align: center;
 }
 
 code {
@@ -1313,7 +1314,7 @@ pre .storage {
 
 .author-template .post-grid,
 .tag-template .post-grid {
-	margin-left: 0;
+	margin-left: -30;
 }
 
 .grid-item {
@@ -1326,27 +1327,27 @@ pre .storage {
 }
 
 .grid-item,
-.home-template .grid-item:nth-child(3n+1) {
+.home-template .grid-item:nth-child(3n+1),
+.tag-template .grid-item:nth-child(3n+1) {
 	height: 450px;
 	width: 50%;
 }
 
 .grid-item:nth-child(3n+1),
-.home-template .grid-item:nth-child(3n+3) {
+.home-template .grid-item:nth-child(3n+3),
+.tag-template .grid-item:nth-child(3n+3) {
 	height: 600px;
 	width: 100%;
 }
 
-.author-template .grid-item,
-.tag-template .grid-item {
+.author-template .grid-item {
 	height: auto;
 	padding-left: 60px;
 	padding-right: 60px;
 	width: 50%;
 }
 
-.author-template .grid-item:nth-child(2n+1),
-.tag-template .grid-item:nth-child(2n+1) {
+.author-template .grid-item:nth-child(2n+1) {
 	clear: left;
 }
 
@@ -1370,12 +1371,14 @@ pre .storage {
 }
 
 .grid-item:nth-child(3n+1) .post-inside .post-title,
-.home-template .grid-item:nth-child(3n+3) .post-title {
+.home-template .grid-item:nth-child(3n+3) .post-title,
+.tag-template .grid-item:nth-child(3n+3) .post-title {
 	font-size: 40px;
 	max-width: 80%;
 }
 
-.home-template .grid-item:nth-child(3n+1) .post-title {
+.home-template .grid-item:nth-child(3n+1) .post-title,
+.tag-template .grid-item:nth-child(3n+1) .post-title {
 	font-size: 28px;
 	max-width: none;
 }
@@ -1894,6 +1897,7 @@ pre .storage {
 
 .current-menu-item > a {
 	background-color: #ff3c00;
+	padding: 5px;
 }
 
 /**
@@ -2021,19 +2025,25 @@ pre .storage {
 		height: 800px;
 	}
 
-	.author-template .grid-item,
+	/*.author-template .grid-item,
 	.tag-template .grid-item {
 		height: auto;
+	}*/
+	
+	.tag-template .grid-item {
+		height: 450px;
 	}
 
 	.grid-item:nth-child(3n+1) .post-inside .post-title,
 	.home-template .grid-item:nth-child(3n+3) .post-title,
+	.tag-template .grid-item:nth-child(3n+3) .post-title,
 	.page-title,
 	.post-template .post-title {
 		font-size: 48px;
 	}
 
-	.home-template .grid-item:nth-child(3n+1) .post-title {
+	.home-template .grid-item:nth-child(3n+1) .post-title,
+	.tag-template .grid-item:nth-child(3n+1) .post-title {
 		font-size: 36px;
 	}
 
@@ -2157,12 +2167,14 @@ pre .storage {
 
 @media only screen and (max-width: 960px) {
 	.grid-item,
-	.home-template .grid-item:nth-child(3n+1) {
+	.home-template .grid-item:nth-child(3n+1),
+	.tag-template .grid-item:nth-child(3n+1) {
 		width: 100%;
 	}
 
 	.grid-item:nth-child(3n+1),
-	.home-template .grid-item:nth-child(3n+3) {
+	.home-template .grid-item:nth-child(3n+3),
+	.tag-template .grid-item:nth-child(3n+3) {
 		height: 450px;
 	}
 
@@ -2172,7 +2184,8 @@ pre .storage {
 	}
 
 	.grid-item:nth-child(3n+1) .post-inside .post-title,
-	.home-template .grid-item:nth-child(3n+3) .post-title {
+	.home-template .grid-item:nth-child(3n+3) .post-title,
+	.tag-template .grid-item:nth-child(3n+3) .post-title {
 		font-size: 28px;
 		max-width: none;
 	}
@@ -2377,7 +2390,8 @@ pre .storage {
 	.site-title,
 	.post-title,
 	.grid-item:nth-child(3n+1) .post-inside .post-title,
-	.home-template .grid-item:nth-child(3n+3) .post-title {
+	.home-template .grid-item:nth-child(3n+3) .post-title,
+	.tag-template .grid-item:nth-child(3n+3) .post-title {
 		font-size: 24px;
 	}
 
