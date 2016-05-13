@@ -2178,10 +2178,10 @@ pre .storage {
 		height: 450px;
 	}
 
-	.author-template .grid-item,
+	/*.author-template .grid-item,
 	.tag-template .grid-item {
 		height: auto;
-	}
+	}*/
 
 	.grid-item:nth-child(3n+1) .post-inside .post-title,
 	.home-template .grid-item:nth-child(3n+3) .post-title,
