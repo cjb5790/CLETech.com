@@ -1,67 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	{{! Document Settings }}
+	{{!-- Document Settings --}}
 	<meta charset="utf-8">
 
-	{{! Page Meta }}
+	{{!-- Page Meta --}}
 	<title>{{meta_title}}</title>
-	<meta name="description" content="{{meta_description}}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
 
-	{{! Styles }}
+	{{!-- Styles --}}
 	<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic%7CMontserrat:400,700" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
 
-	{{! Theme settings }}
+	{{!-- Theme settings --}}
 	<script type="text/javascript">
-		var disqus_shortname = 'cletech', // replace my_disqus_shortname with your shortname
+		var disqus_shortname = 'cletech'; // replace my_disqus_shortname with your shortname
 			// instagram_user_id = '2372162651', // add your Instagram user ID
-			// instagram_access_token = '2372162651.d4daff6.d6c91752b4914a8da6e01a85747ae89e', // add your Instagram access token
-			latest_posts_count = 5; // change the latest posts number
+			// instagram_access_token = '2372162651.d4daff6.d6c91752b4914a8da6e01a85747ae89e'; // add your Instagram access token
 	</script>
 
 	<!--[if lt IE 9]>
 	<script src="{{asset "js/html5.js"}}"></script>
 	<![endif]-->
 
-	{{! Ghost outputs important style and meta data with this tag }}
+	{{!-- Ghost outputs important style and meta data with this tag --}}
 	{{ghost_head}}
-	<!--<script>
-		window.onload = function () {
-			var bodyClass = document.getElementById('bodyClass').value,		
-				body = document.getElementById('body');
-				
-			body.className = '';
-				
-			if ((bodyClass.indexOf('tag-template') > -1) || bodyClass.indexOf('author-template') > -1) {
-				body.className += 'body-template';
-			} else {
-				body.className += bodyClass;
-			}
-		}
-	</script>-->
 </head>
-<input type="hidden" id="bodyClass" value="{{body_class}}" />
-<body id="body" class="{{body_class}}">
+<body class="{{body_class}}">
 	<div id="page" class="site">
-		{{! The tag below includes the theme header - partials/header.hbs }}
+		{{!-- The tag below includes the theme header - partials/header.hbs --}}
 		{{> header}}
-		{{! Everything else gets inserted here }}
+		{{!-- Everything else gets inserted here --}}
 		{{{body}}}
-		{{! The tag below includes the theme header - partials/sidebar.hbs }}
+		{{!-- The tag below includes the theme header - partials/sidebar.hbs --}}
 		{{> sidebar}}
-		{{! The tag below includes the theme footer - partials/footer.hbs }}
+		{{!-- The tag below includes the theme footer widget area - partials/footer-widgets.hbs --}}
+		{{!-- {{> footer-widgets}} --}}
+		{{!-- The tag below includes the theme footer - partials/footer.hbs --}}
 		{{> footer}}
 		<div class="overlay"></div>
-	</div><!-- #page -->	
+	</div><!-- #page -->
 
-	{{! Ghost outputs important scripts and data with this tag }}
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	{{!-- Ghost outputs important scripts and data with this tag --}}
 	{{ghost_foot}}
 
-	{{! JavaScript files }}
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	{{!-- JavaScript files --}}
 	<script type="text/javascript" src="{{asset "js/plugins.js"}}"></script>
 	<script type="text/javascript" src="{{asset "js/custom.js"}}"></script>
 </body>
