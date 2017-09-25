@@ -476,6 +476,10 @@ mark {
 }
 
 ins {
+	background-color: #fff;
+	padding: 0 3px;
+	text-decoration: none;
+	text-align: center;
   background-color: #fffac4;
   padding: 0 3px;
   text-decoration: none;
@@ -2828,16 +2832,6 @@ input[type="button"].square {
     position: static;
     width: 140px;
   }
-}
-
-ins {
-	background-color: #fff;
-	padding: 0 3px;
-	text-decoration: none;
-	text-align: center;
-  background-color: #fffac4;
-  padding: 0 3px;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
