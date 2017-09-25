@@ -1,0 +1,57 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The main content area on the homepage }}
+<main class="site-main" role="main">
+	<div class="site-content inner-wide">
+
+<!--
+		<div class="cover hero">
+			{{#if @blog.cover}}
+			<div class="cover-bg" style="background-image: url({{@blog.cover}})"></div>
+			{{/if}}
+			<div class="cover-content">
+				<div class="inner">
+					<div class="hero-wrap">
+						<h2 class="hero-title fade-in">{{@blog.title}}</h2>
+						<p class="hero-text fade-in">{{@blog.description}}</p>
+						<p class="subscribe"><a href="{{@blog.url}}/rss/" class="button light fade-in">Subscribe</a></p>
+					</div>					
+				</div>
+			</div>
+		</div>
+-->
+
+		<br>
+		
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Home Page Banner -->
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-8946773264106732"
+			data-ad-slot="6838515607"
+			data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		
+		<br>
+		
+		{{! The tag below includes the post loop - partials/loop.hbs }}
+		{{> "loop"}}
+		
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Home Page Footer -->
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-8946773264106732"
+			data-ad-slot="6320041202"
+			data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		
+		<br>
+		
+	</div><!-- .site-content -->
+</main><!-- .site-main -->

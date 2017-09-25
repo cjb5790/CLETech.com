@@ -1,0 +1,33 @@
+<div class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="widget-area">
+			{{#if @blog.navigation}}
+				{{navigation}}
+			{{/if}}
+			<aside class="widget widget-text" id="SocialMediaWidget">
+				<h2 class="widget-title">CLE Tech on Social Media</h2>
+				{{> offsite-links}}
+			</aside>
+			<!--<aside class="widget widget-newsletter">
+				<h2 class="widget-title">{{@blog.title}} Newsletter</h2>
+				<p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+				<div id="mc_embed_signup">
+					<form action="//cletech.us13.list-manage.com/subscribe/post?u=6fa2e586216195d5a8cb5254e&amp;id=6285036ff8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+							<label for="mce-EMAIL" class="screen-reader-text">Email Address</label>
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						</div>
+					</form>
+				</div>
+			</aside>-->
+			<aside class="widget widget-text">
+				<h2 class="widget-title">Contact</h2>
+				<ul class="contacts">
+					<li><span class="icon icon-envelope" aria-hidden="true"></span><a href="mailto:info@cletech.net">info@cletech.net</a></li>
+				</ul>
+			</aside><!-- .widget -->
+		</div><!-- .widget-area -->
+		<a class="sidebar-toggle"><span class="screen-reader-text">Close Sidebar</span><span class="icon" aria-hidden="true"></span></a>
+	</div><!-- .sidebar-scrollable -->
+</div><!-- .sidebar -->
