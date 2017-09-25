@@ -1127,8 +1127,6 @@ input[type="button"].square {
 
 .overlay {
   background-color: transparent;
-  cursor: url(../images/close.png), default;
-  cursor: -webkit-image-set(url(../images/close.png) 1x, url(../images/close@2x.png) 2x), default;
   height: 100%;
   left: 0;
   position: absolute;
